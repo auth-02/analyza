@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Head from "next/head";
@@ -9,11 +10,7 @@ export const metadata = {
   description: "All about data: From Raw Data to Refined Insights: Extract. Structure. Insights. Visualize. Analyze. Customize.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
@@ -21,5 +18,5 @@ export default function RootLayout({
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
-  );  
+  );
 }
