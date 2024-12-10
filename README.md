@@ -1,87 +1,93 @@
 <p align="center">
-  <a href="https://nextjs-fastapi-starter.vercel.app/">
-    <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" height="96">
-    <h3 align="center">Next.js FastAPI Starter</h3>
+  <a href="https://github.com/auth-02/analyza">
+    <img src="./public/analyza.svg" height="96">
+    <h3 align="center">Analyza!</h3>
+  </a>
+</p>
+<p align="center">All about data!</p>
+<p align="center">From {Raw Data} to {Refined Insights}</p>
+<p align="center">Extract. Structure. Insights. Visualize. Analyze. Customize.</p>
+<br/>
+
+<p align="center">
+  <a href="https://github.com/auth-02/analyza">
+    <img alt="Current version for Analyza" src="https://img.shields.io/badge/version-v0.1.0-orange?style=flat-square" />
+  </a>
+  <a href="https://github.com/auth-02/analyza">
+    <img alt="Minimum Next.js version required: 14+" src="https://img.shields.io/badge/Next.js-14.2%2B-red?style=flat-square" />
+  </a>
+  <a href="https://github.com/auth-02/analyza">
+    <img alt="Minimum Python version required: 3.9+" src="https://img.shields.io/badge/Python-3.9%2B-brightgreen?style=flat-square" />
+  </a>
+  <a href="https://github.com/auth-02/analyza/blob/master/LICENSE">
+    <img alt="License badge for Analyza" src="https://img.shields.io/github/license/auth-02/analyza?style=flat-square" />
   </a>
 </p>
 
-<p align="center">Simple Next.j 14 boilerplate that uses <a href="https://fastapi.tiangolo.com/">FastAPI</a> as the API backend.</p>
-
-<br/>
-
 ## Introduction
 
-This is a hybrid Next.js 14 + Python template. One great use case of this is to write Next.js apps that use Python AI libraries on the backend, while still having the benefits of Next.js Route Handlers and Server Side Rendering.
+**Analyza** is your all-in-one solution to turn raw data into actionable insights. Designed for data enthusiasts, analysts, and developers, Analyza provides tools to extract, structure, and visualize data seamlessly. From cleaning to customization, we ensure your data journey is efficient and insightful.
 
-## How It Works
+### Main features:
 
-The Python/FastAPI server is mapped into to Next.js app under `/api/`.
+- **Data extraction**: Import data from various sources.
+- **Structuring tools**: Format and clean data with ease.
+- **Insights generation**: Leverage built-in analytics and AI models.
+- **Visualization**: Create customizable dashboards and reports.
 
-This is implemented using [`next.config.js` rewrites](https://github.com/digitros/nextjs-fastapi/blob/main/next.config.js) to map any request to `/api/py/:path*` to the FastAPI API, which is hosted in the `/api` folder.
+## Getting Started with Analyza
 
-Also, the app/api routes are available on the same domain, so you can use NextJs Route Handlers and make requests to `/api/...`.
-
-On localhost, the rewrite will be made to the `127.0.0.1:8000` port, which is where the FastAPI server is running.
-
-In production, the FastAPI server is hosted as [Python serverless functions](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python) on Vercel.
-
-## Demo
-
-https://nextjs-fastapi-starter.vercel.app/
-
-## Deploy Your Own
-
-You can clone & deploy it to Vercel with one click:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdigitros%2Fnextjs-fastapi%2Ftree%2Fmain)
-
-## Developing Locally
-
-You can clone & create this repo with the following command
+First, get yourself a clone of analyza:
 
 ```bash
-npx create-next-app nextjs-fastapi --example "https://github.com/digitros/nextjs-fastapi"
+git clone https://github.com/auth-02/analyza.git
+cd analyza
 ```
 
-## Getting Started
-
-First, create and activate a virtual environment:
+Next, go ahead and create a virtual environment for Analyza and activate it:
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate
+source venv/Scripts/activate #for linux/mac ->  venv/bin/activate
 ```
 
 Then, install the dependencies:
 
 ```bash
 npm install
-# or
-yarn
-# or
-pnpm install
 ```
 
-Then, run the development server(python dependencies will be installed automatically here):
+Then, run the development server (python dependencies will be installed automatically here):
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
+<p>"That's it! Analyza is ready"</p> 
+<br>
 
-The FastApi server will be running on [http://127.0.0.1:8000](http://127.0.0.1:8000) – feel free to change the port in `package.json` (you'll also need to update it in `next.config.js`).
+Go to [Analyza](http://localhost:3000) in your favorite browser.
 
-## Learn More
+Also, the FastAPI server will be running on [API Docs](http://127.0.0.1:8000/api/docs).
 
-To learn more about Next.js, take a look at the following resources:
+## Contributors
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [FastAPI Documentation](https://fastapi.tiangolo.com/) - learn about FastAPI features and API.
+<span style="display: inline-block; text-align: center; margin: 10px;">
+  <a href="https://github.com/auth-02">
+    <img src="https://github.com/auth-02.png" width="60px;" style="border-radius: 50%;"/><br />
+    auth-02
+  </a>
+</span>
+<span style="display: inline-block; text-align: center; margin: 10px;">
+  <a href="https://github.com/maheshsathe07">
+    <img src="https://github.com/maheshsathe07.png" width="60px;" style="border-radius: 50%;"/><br />
+    maheshsathe07
+  </a>
+</span>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!!
+
+
+## License
+
+MIT © [Analyza](https://github.com/auth-02/analyza/blob/master/LICENSE)<br/>
